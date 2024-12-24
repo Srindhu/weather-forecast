@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script src="now.js" defer></script>
+    <script src="index.js" defer></script>
     <link rel="stylesheet" href="output.css">
     
 
@@ -35,6 +35,10 @@
                         <input type="text" id="city" placeholder="  Enter city Name" spellcheck="false" class="w-5/6">
                         <button id='search' type ="submit"><i class="fas fa-search mr-2"></i></button>
                     </form>
+                     <!-- Suggestion drop down -->
+                    <div id="suggestionsContainer" class="relative bg-blue-400 shadow-lg rounded-lg hidden"> 
+                        <ul id="suggestions" class="absolute bg-pink-400 shadow-lg rounded-lg "></ul>          
+                    </div>
                 </div>
             </div>
         </div>        
