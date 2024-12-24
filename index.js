@@ -15,7 +15,6 @@ const day3 = document.querySelector("#d3");
 const day4 = document.querySelector("#d4");
 const day5 = document.querySelector("#d5");
 const day6 = document.querySelector("#d6");
-const day7 = document.querySelector("#d7");
 const body = document.querySelector("#mainCard");
 const condition = document.querySelector("#condition");
 const recentCitiesDropdown = document.querySelector("#suggestionsContainer");
@@ -41,11 +40,6 @@ hideForecastbtn.addEventListener("click", () => {
     hideForecastbtn.classList.add("hidden");
     showForecastbtn.classList.remove("hidden");
 })
-
-searchbtn.addEventListener("click", () => {
-    searchbar.classList.remove("hidden");
-})
-
 
 content.innerHTML = `<div class="loader">Loading...</div>`;
 
@@ -98,7 +92,7 @@ function displayWeather(data) {
     condition.innerHTML = `${currentDay.day.condition.text}`;
 
     // Updating forecast days
-    const days = [day1, day2, day3, day4, day5, day6, day7];
+    const days = [day1, day2, day3, day4, day5, day6];
     days.forEach((day, index) => {
         const forecastingOf = data.forecast.forecastday[index + 1];
         if (!forecastingOf) return; // Check if the forecast day exists
@@ -203,7 +197,7 @@ function displayFilteredSuggestions(cities) {
 // code for the functionality 
 search.addEventListener('click', (event) => {
     event.preventDefault();
-    content.innerHTML = `<div class="loader">Loading...</div>`;
+
     const city = searchField.value;
     const storedData = sessionStorage.getItem(city);
     searchField.value = '';
@@ -230,15 +224,15 @@ search.addEventListener('click', (event) => {
             })
             .catch(error => {
                 console.error('Error:', error);
-                content.innerHTML = `Unable to find weather for "${searchField.value}"`;
-                temp.innerHTML = `Not available !!!`;
-                humidity.innerHTML = `Not available !!!`;
-                windSpeed.innerHTML = `Not available !!!`;
-                location1.innerHTML = `Not available !!!`;
-                condition.innerHTML = `Not available !!!`;
-                const days = [day1, day2, day3, day4, day5, day6, day7];
+                content.innerHTML = `Not found for the  location of  "${searchField.value}"`;
+                temp.innerHTML = `Not found!!!`;
+                humidity.innerHTML = `Not found !!!`;
+                windSpeed.innerHTML = `Not found !!!`;
+                location1.innerHTML = `Not found !!!`;
+                condition.innerHTML = `Not found !!!`;
+                const days = [day1, day2, day3, day4, day5, day6];
                 days.forEach((day) => {
-                    day.innerHTML = `Not available !!!`;
+                    day.innerHTML = `Not found !!!`;
                     day.style.background = "linear-gradient(to top, blue, white)";
                     body.style.background = "linear-gradient(to top, white, blue)";
                 });
