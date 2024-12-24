@@ -1,0 +1,1 @@
+This is a weather forecast application built with JavaScript, HTML, and CSS (using Tailwind CSS). The application retrieves weather data from a weather API and provides location-based weather forecasts, current weather conditions, and a 5-day extended forecast.
