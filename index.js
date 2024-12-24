@@ -1,4 +1,4 @@
-// creating variables
+// creating  and defining variables
 
 const search = document.querySelector("#search");
 const searchField = document.querySelector("#city");
