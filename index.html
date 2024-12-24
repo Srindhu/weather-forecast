@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="now.js" defer></script>
+    <link rel="stylesheet" href="output.css">
+    
+
+    <title> Weather Forecast </title>
+<!-- Menu/Navigation -->
+
+    <div class="flex justify-center bg-pink-200">
+        <div class="md:flex gap-6 items-center p-2">
+            <button id="forecastbtn"><a class="text-xl text-blue-400 hover:text-green-500 p-4">Forecast</a></button>
+            <button id="hideforecastbtn"><a class="text-xl text-blue-400 hover:text-green-500 p-4">Hide Forecast</a></button>
+            <button><a id="searchbtn" class="text-xl text-blue-400 hover:text-green-500 p-4">Search Location</a></button>
+            <button id="btnLocation"><a class="text-xl text-blue-400 hover:text-green-500 p-4">Current Location</a></button>
+            <a href="#contact" class="text-xl text-blue-400 hover:text-green-500 p-4">Contact Details</a>
+        </div>
+    </div>
+    
+<!-- Menu/Navigation -->
+ 
+</head>
+
+<body id="body" >
+    <div class="p-2 bg-yellow-400">
+        <div class=" grid  grid-cols-1 md:p-4 lg:gap-x-5 gap-y-2 p-2  overflow-hidden">
+            <div id="mainCard" class="md:border-2 md:border-pink-600 lg:p-2 md:p-4 flex flex-col md:justify-evenly rounded-xl font-lato items-center bg-green-300  ">
+                <!-- search field -->
+                <div id="form" class="flex justify-center flex-col p-5 ">
+                    <form class="lg:flex p-1 items-center bg-violet-600 flex justify-between border-2 rounded-xl md:w-96 w-80  transform transition-transform duration-300 hover:scale-105 hover:cursor-pointer">
+                        <input type="text" id="city" placeholder="  Enter city Name" spellcheck="false" class="w-5/6">
+                        <button id='search' type ="submit"><i class="fas fa-search mr-2"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>        
+    </div>
+    
+</body>
+
+<footer class="bg-pink-300 text-white py-6 lg:mt-10">
+    <div class="max-w-screen-xl mx-auto px-4 flex justify-between items-center">
+        
+        <!-- Left side (Name or Logo) -->
+        <div>
+            <h1 class="text-3xl font-semibold">Weather Forecast App</h1>
+            <p class="text-sm">Your trusted weather source.</p>
+        </div>
+
+        <!-- Right side (Social Media Icons) -->
+        <div id="contact" class="flex gap-4">
+            
+            <a href="https://www.instagram.com/srindhu__2608?igsh=aXI2a3h2MjNneWE5" class="text-white hover:text-pink-500"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/" class="text-white hover:text-pink-500"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.twitter.com" class="text-white hover:text-pink-500"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/pocharam-srindhu-1662832b5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-white hover:text-pink-500"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+
+    <div class="mt-4 text-center text-2xl text-green-600">
+        © 2024 Weather Forecast App. All Rights Reserved.
+    </div>
+</footer>
+
+
+
+</html>
