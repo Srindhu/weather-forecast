@@ -9,10 +9,13 @@ module.exports = {
           '100%': { transform: 'translateY(0)', opacity: '1' },
         },
       },
-
-
-
-
+      animation: {
+        'slide-up': 'slide-up 0.9s ease-out',
+      },
+      fontFamily: {
+        lato: ['Lato', 'sans-serif'],
+        montserrat: ['Montserrat', 'sans-serif'],
+      },
     },
   },
   plugins: [],
