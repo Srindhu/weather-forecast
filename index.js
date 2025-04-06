@@ -25,7 +25,7 @@ const mbody = document.querySelector("#body");
 const currentLocation = document.querySelector("#btnLocation");
 let day;
 
-const APIkey = "ac11dfcacc35454b9b431512242412";
+const APIkey = "38e99ef999a54951846134303250604";
 const URL = "https://api.weatherapi.com/v1/forecast.json?";
 
 
